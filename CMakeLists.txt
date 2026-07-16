@@ -53,6 +53,13 @@ target_link_libraries(${PROJECT_NAME}
 		SDL3::SDL3
 		nlohmann_json::nlohmann_json
 )
+target_link_options(${PROJECT_NAME} 
+	PRIVATE
+		-static
+)
+if(WIN32)
+	add_compile_options(${PROJECT_NAME} x86_64-pc-windows-msvc)
+endif()
 
 install(
 	FILES
