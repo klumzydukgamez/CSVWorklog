@@ -1,0 +1,14 @@
+# Copyright (c) 2026 Klumzy Duk Gamez. All rights reserved.
+# This file is apart of CSVWorklog.
+# See LICENSE.md for license details.
+
+
+[submodule "Vendor/SDL"]
+	path = Vendor/SDL
+	url = https://github.com/libsdl-org/SDL.git
+[submodule "Vendor/json"]
+	path = Vendor/json
+	url = https://github.com/nlohmann/json.git
+[submodule "Vendor/imgui"]
+	path = Vendor/imgui
+	url = https://github.com/ocornut/imgui.git

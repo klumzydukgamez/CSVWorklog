@@ -1,0 +1,7 @@
+<!-- 
+Copyright (c) 2026 Klumzy Duk Gamez. All rights reserved.
+This file is apart of CSVWorklog.
+See LICENSE.md for license details.
+-->
+
+# CSVWorklog
