@@ -212,6 +212,11 @@ int main(int argc, char* argv[]) {
 	ImGui::CreateContext();
 	ImGui::StyleColorsDark();
 
+	{
+		ImGuiIO& io = ImGui::GetIO();
+		io.IniFilename = nullptr;
+	}
+
 	ImGui_ImplSDL3_InitForSDLRenderer(window, renderer);
 	ImGui_ImplSDLRenderer3_Init(renderer);
 
