@@ -12,7 +12,7 @@ set(CMAKE_C_STANDARD             23)
 set(CMAKE_C_STANDARD_REQUIRED    ON)
 set(CMAKE_C_EXTENSIONS          OFF)
 
-set(CMAKE_EXPORT_COMPILE_COMMAND ON)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_INSTALL_PREFIX "${CMAKE_CURRENT_SOURCE_DIR}")
 
 set(SDL_SHARED        OFF CACHE BOOL   "" FORCE)
@@ -58,7 +58,7 @@ target_link_options(${PROJECT_NAME}
 		-static
 )
 if(WIN32)
-	add_compile_options(${PROJECT_NAME} x86_64-pc-windows-msvc)
+	add_compile_options(-target x86_64-pc-windows-msvc)
 endif()
 
 install(
